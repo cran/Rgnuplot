@@ -1,0 +1,4 @@
+useDynLib(Rgnuplot, .registration = TRUE, .fixes = "C_")
+exportPattern("^gp.","%s%")
+#import(png)
+

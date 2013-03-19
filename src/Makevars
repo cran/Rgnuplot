@@ -1,0 +1,4 @@
+PKG_LIBS =  -L/usr/lib
+PKG_CPPFLAGS =  -I/usr/include -I. -I./src
+
+

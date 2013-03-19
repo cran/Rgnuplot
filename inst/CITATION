@@ -1,0 +1,10 @@
+bibentry(
+bibtype ="Manual",
+ title = "{Rgnuplot}: {R} interface for gnuplot",
+ author = "Jos{\\'e} Gama [cre,aut], G{\\\"o}ran H{\\\"o}gn{\\\"a}s [ths],Nicolas Devillard [aut],Mauricio Galo [ctb],Patrick J. Bartlein [ctb],Oscar Perpi{\\~n}{\\'a}n Lamigueiro [ctb]",
+ year = "2013",
+ note = "R package version 1.0.0",
+ url = "http://CRAN.R-project.org/package=Rgnuplot",
+ key = "Rgnuplot-package"
+ )
+

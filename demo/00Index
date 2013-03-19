@@ -1,0 +1,34 @@
+anim			Simple animation of a sine function (from gnuplot_i examples)
+divergingcolormaps	Examples of using diverging color maps and other improvements for temparature anomalies' maps
+errorbars		Error bars and error boxes
+example			Example (from gnuplot_i examples)
+executedemoscripts	Using gp.load.demo and gp.readURL2string
+fenceplot		Fence plot
+fitexample1		minpak example 1
+fitexample2		minpak example 2
+fitlaser		Horizontal and vertical error bars
+Fractal			Fractal images, the Mandelbrot set
+hello1b			"Hello World!" - text on caption
+hello1			"Hello World!" - text on legend
+hello2			"Hello World!" - inline gnuplot
+hello3			"Hello World!" - loading and executing a gnuplot script from Rgnuplot
+hello4			"Hello World!" - loading a script directly from gnuplot
+hello5			"Hello World!" - using 
+histogram3D		3D histogram with shiny bars
+ImageProcessing		simple image processing functions
+Interpolation1		Example of interpolation
+Interpolation2		Example of interpolation
+maps			Cartographic examples
+Maungawhau		Displaying a DEM
+multiplot		Plot implicit, explicit and parametric expressions
+NORDKLIM1		Displaying time series of climate data
+NORDKLIM2		Displaying a time series of climate data with checkboxes
+palettes		How to use palettes in 2 and 3-dimensional plots
+plotRGB			Converting and visualizing PNG and RGB image files
+polynomialfit		Polynomial data fit
+randomwalk1D		Random walk in 1 dimension
+randomwalk2D		Random walk in 2 dimensions
+randomwalk3D		Random walk in 3 dimensions
+rpbivariatenormal	Plots a bivariate normal distribution
+rpnormal		Plots a univariate normal distribution
+sinepng			Saving a plot to a PNG file (from gnuplot_i examples)
