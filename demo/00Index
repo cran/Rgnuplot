@@ -1,4 +1,5 @@
 anim			Simple animation of a sine function (from gnuplot_i examples)
+bindings		Simple examples for creating hot-keys for the plots
 divergingcolormaps	Examples of using diverging color maps and other improvements for temparature anomalies' maps
 errorbars		Error bars and error boxes
 example			Example (from gnuplot_i examples)
@@ -18,7 +19,10 @@ histogram3D		3D histogram with shiny bars
 ImageProcessing		simple image processing functions
 Interpolation1		Example of interpolation
 Interpolation2		Example of interpolation
-maps			Cartographic examples
+LaTeX			Examples of LaTeX output
+maps1			Cartographic examples
+maps2			Cartographic examples
+maps3			Cartographic examples
 Maungawhau		Displaying a DEM
 multiplot		Plot implicit, explicit and parametric expressions
 NORDKLIM1		Displaying time series of climate data

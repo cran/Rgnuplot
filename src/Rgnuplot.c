@@ -79,7 +79,7 @@ subspecs[subspecPos+1]=0;
 		case 'd':
 subspecs[subspecPos++]=*p;
 subspecs[subspecPos+1]=0;
-i2 = va_arg(argp, int**);
+i2 =(int *) va_arg(argp, int**);
 i=(int)*i2;
 sprintf(str,subspecs,i);
 //printf("$%s$", subspecs);printf("$%s$", str);
@@ -95,7 +95,7 @@ case 'g':
 case 'G':
 subspecs[subspecPos++]=*p;
 subspecs[subspecPos+1]=0;
-d2 = va_arg(argp, double**);
+d2 =(double *) va_arg(argp, double**);
 d=(double)*d2;
 sprintf(str,subspecs,d);
 //printf("$%s$", subspecs);printf("$%s$", str);
@@ -110,7 +110,7 @@ break;
 		case 'o':
 subspecs[subspecPos++]=*p;
 subspecs[subspecPos+1]=0;
-			ui2 = va_arg(argp, unsigned int**);
+			ui2 =(int*) va_arg(argp, unsigned int**);
 ui=(unsigned)*ui2;
 			sprintf(str,subspecs,ui);
 //printf("$%s$", subspecs);printf("$%s$", str);
@@ -122,7 +122,7 @@ case 'c':
 		case 's':
 subspecs[subspecPos++]=*p;
 subspecs[subspecPos+1]=0;
-s2 = va_arg(argp, char ****);
+s2 =(char**) va_arg(argp, char ****);
 s=(char*)*s2;
 //printf("$%s$", subspecs);printf("$%s$", s);
 			fputs(s, hh->gnucmd);
@@ -221,4 +221,5 @@ void Rgnuplot_write_multi_csv( char const  **fileName, double const * **xListPtr
 {
 *rtrnvalue=gnuplot_write_multi_csv( *fileName,*xListPtr,*n,*numColumns,*title );
 }
+
 

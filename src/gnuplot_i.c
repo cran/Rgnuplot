@@ -707,7 +707,7 @@ char const * gnuplot_tmpfile(gnuplot_ctrl * handle)
     {
         return NULL;
     }
-    close(unx_fd);
+    // c l o s e(unx_fd);
 
 #endif // #ifdef WIN32
 

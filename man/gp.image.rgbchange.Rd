@@ -13,26 +13,36 @@
 \alias{gp.image.rgbgreyscaleY}
 \alias{gp.image.rgbgreyscaleavg}
 \title{Change image colors}
-\description{\code{gp.image.rgbchange} modifies an image with either a formula for each color component of RGB or for all
-\code{gp.image.rgbfalsecolor} converts an image from true color to false color and vice-versa
+\description{\code{gp.image.rgbchange} modifies an image with either a formula 
+	for each color component of RGB or for all
+\code{gp.image.rgbfalsecolor} converts an image from true color to false color 
+and vice-versa
 \code{gp.image.rgbfiltercolor.blue} filters an image using the blue channel
 \code{gp.image.rgbfiltercolor.green} filters an image using the green channel
 \code{gp.image.rgbfiltercolor.red} filters an image using the red channel
 \code{gp.image.rgbfiltercolor.sepia} filters an image using a sepia algorithm
-\code{gp.image.rgbfiltercolor.sepia2} filters an image using a 2nd sepia algorithm
-\code{gp.image.rgbgreyscaleBT709} filters an image using greyscale algorithm - BT709
-\code{gp.image.rgbgreyscaleLinear} filters an image using greyscale algorithm - linear
-\code{gp.image.rgbgreyscaleLuminosity} filters an image using greyscale algorithm - luminosity
-\code{gp.image.rgbgreyscaleRMY} filters an image using greyscale algorithm - RMY
+\code{gp.image.rgbfiltercolor.sepia2} filters an image using a 2nd sepia 
+algorithm
+\code{gp.image.rgbgreyscaleBT709} filters an image using greyscale algorithm
+- BT709
+\code{gp.image.rgbgreyscaleLinear} filters an image using greyscale algorithm
+- linear
+\code{gp.image.rgbgreyscaleLuminosity} filters an image using greyscale 
+algorithm - luminosity
+\code{gp.image.rgbgreyscaleRMY} filters an image using greyscale algorithm
+- RMY
 \code{gp.image.rgbgreyscaleY} filters an image using greyscale algorithm - Y
-\code{gp.image.rgbgreyscaleavg} filters an image using greyscale algorithm - average
+\code{gp.image.rgbgreyscaleavg} filters an image using greyscale algorithm
+- average
 }
-\usage{gp.image.rgbchange(fileIN, fileOUT, filetype='PNG', terminal=NULL,rgbformula,rgbformulaG='',rgbformulaB='')
+\usage{gp.image.rgbchange(fileIN, fileOUT, filetype='PNG', terminal=NULL,
+	rgbformula,rgbformulaG='',rgbformulaB='')
 gp.image.rgbfalsecolor(fileIN, fileOUT, filetype='PNG', terminal=NULL)
 gp.image.rgbfiltercolor.blue(fileIN, fileOUT, filetype='PNG', terminal=NULL)
 gp.image.rgbfiltercolor.green(fileIN, fileOUT, filetype='PNG', terminal=NULL)
 gp.image.rgbfiltercolor.red(fileIN, fileOUT, filetype='PNG', terminal=NULL)
-gp.image.rgbfiltercolor.sepia(fileIN, fileOUT, filetype='PNG', terminal=NULL,sepiaDepth=20,sepiaIntensity=10)
+gp.image.rgbfiltercolor.sepia(fileIN, fileOUT, filetype='PNG', terminal=NULL,
+sepiaDepth=20,sepiaIntensity=10)
 gp.image.rgbfiltercolor.sepia2(fileIN, fileOUT, filetype='PNG', terminal=NULL)
 gp.image.rgbgreyscaleBT709(fileIN, fileOUT, filetype='PNG', terminal=NULL)
 gp.image.rgbgreyscaleLinear(fileIN, fileOUT, filetype='PNG', terminal=NULL)

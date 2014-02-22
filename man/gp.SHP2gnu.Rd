@@ -6,24 +6,30 @@
 \alias{gp.matrix2PNG}
 \alias{gp.plot.map}
 \title{Work with shapefiles}
-\description{\code{gp.SHP2gnu} given a shapefile (SHP) with full path and the shapefile layer name, the coordinates are saved to a text file readable by gnuplot
+\description{\code{gp.SHP2gnu} given a shapefile (SHP) with full path and the 
+	shapefile layer name, the coordinates are saved to a text file readable 
+	by gnuplot
 
 \code{gp.resampleDEM} resamples DEM data, similarly to what GIS applications do
 
 \code{gp.boxXY} returns the box (coordinates) around a location, from a shapefile
 
-\code{gp.map.PNG2lines} draws "squarish" coastlines given a gridded map from a PNG image
+\code{gp.map.PNG2lines} draws "squarish" coastlines given a gridded map from a 
+PNG image
 
 \code{gp.matrix2PNG} saves a matrix with a mask of a map to a PNG file
 
 \code{gp.plot.map} plots a map with vector and raster overlays
 }
 \usage{gp.SHP2gnu(SHPfilename, SHPlayername,gnufilename,toCRS='+init=epsg:4326')
-gp.resampleDEM(fileIN, fileOUT, xrange, yrange, interpolationMethod, XYformat=FALSE)
+gp.resampleDEM(fileIN, fileOUT, xrange, yrange, interpolationMethod, 
+XYformat=FALSE)
 gp.boxXY(fileName)
 gp.map.PNG2lines(PNGfile, landoutlinefile)
 gp.matrix2PNG(matM,PNGfile)
-gp.plot.map(mapvectfiles=NA, projection='PlateCarree', linetype='l', linestyle=1, plotTitle=NA, maprastfile=NA, maprastpalette=NA, AdditionalCode=NA,projectionInit=NA,returnCode=FALSE)}
+gp.plot.map(mapvectfiles=NA, projection='PlateCarree', linetype='l', 
+linestyle=1, plotTitle=NA, maprastfile=NA, maprastpalette=NA, 
+AdditionalCode=NA,projectionInit=NA,returnCode=FALSE)}
 \arguments{
 	\item{SHPfilename}{ shapefile name}
 	\item{SHPlayername}{ shape layer name}

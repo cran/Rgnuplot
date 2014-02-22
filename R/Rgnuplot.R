@@ -4,6 +4,8 @@ pauseterm.present <- NA
 
 "%s%" <- function(x,y) paste(x,y,sep='', collapse='') # string concatenation operator
 
+
+
 gp.plot.map<-function(mapvectfiles=NA, projection='PlateCarree', linetype='l', linestyle=1, plotTitle=NA, maprastfile=NA, maprastpalette=NA, AdditionalCode=NA,projectionInit=NA,returnCode=FALSE)
 {
 validProjections<-c('Winkeltripel','Robinson','Aitoff','NaturalEarth','WernersEquivalent','HammerWagner','EckertI','AlbersConical','SansonFlamsteed',
@@ -749,7 +751,7 @@ for (m in 1:length(z1))
 if (isLines) z2<-z[[n]]@Lines[[m]]@coords else z2<-z[[n]]@Polygons[[m]]@coords
 if (toCRS==fromCRS) write(t(z2),gnufilename,ncolumns = 2,append=TRUE) else {
 b_sp <- sp::SpatialPoints(z2, proj4string=sp::CRS(fromCRS))
-z3<-rgdal::spTransform(b_sp, sp::CRS(toCRS))
+z3<-sp::spTransform(b_sp, sp::CRS(toCRS)) # rgdal::spTransform
 write(t(z3@coords),gnufilename,ncolumns = 2,append=TRUE)
 }
 cat(file=gnufilename,'\n',append=TRUE)
@@ -1415,7 +1417,7 @@ gp.setwd<-function(handle,wd=getwd())
 {#set gnuplot working directory, default path = R's working directory
 gp.CheckHandle(handle)
 options(warn=-1)
-print(wd)
+#print(wd)
 gp.cmd(handle, 'cd \"' %s% wd %s% '\"')
 }
 

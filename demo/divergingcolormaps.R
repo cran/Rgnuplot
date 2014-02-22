@@ -99,6 +99,7 @@ gp.run('#set term pngcairo;set output "GHCN3.png"
 unset xtics
 unset ytics
 unset ztics
+set size ratio -1
 set view map
 set yzeroaxis linetype 0 linewidth 1.000 
 set urange [ -90.0000 : 90.0000 ] noreverse nowriteback
