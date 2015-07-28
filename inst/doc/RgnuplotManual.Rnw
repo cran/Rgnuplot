@@ -1,0 +1,95 @@
+% -*- mode: noweb; noweb-default-code-mode: R-mode; -*-
+%\VignetteIndexEntry{Rgnuplot Manual}
+\documentclass[a4paper,10pt]{amsart}
+\usepackage{ucs}
+\usepackage[utf8x]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{sidecap}
+\setlength{\captionindent}{0pt}
+\usepackage{url}
+\usepackage[parfill]{parskip}
+
+\renewcommand{\floatpagefraction}{0.8}
+
+\title{Rgnuplot Manual}
+\author{Jose Gama}
+
+\date{$ $Id: RgnuplotManual.Rnw 114 2014-04-17 14:22:36Z JoseGama $ $
+  processed with Rgnuplot
+\Sexpr{packageDescription("Rgnuplot", field="Version")}
+in \Sexpr{R.version.string} on \today}
+\begin{document}
+\SweaveOpts{concordance=TRUE}
+
+\setkeys{Gin}{width=0.55\linewidth}
+\SweaveOpts{strip.white=true}
+<<echo=false>>=
+par(mfrow=c(1,1))
+par(mar=c(3,3,1,0)+.1)
+options(width=72)
+@
+
+\maketitle
+
+\tableofcontents
+
+\section{Installing gnuplot}
+\subsection{Installing gnuplot on Linux\\}
+
+On Debian Linux derivatives:\\
+\begin{verbatim}sudo apt-get install gnuplot\end{verbatim}
+
+On RedHat Linux derivatives:\\
+\begin{verbatim}yum install gnuplot*\end{verbatim}
+
+How to install GNUPLOT+TikZ on Ubuntu:\\
+Check GNUPLOT+TikZ For Stunning LaTeX Plots by Tim Teatro\\
+\url{http://www.timteatro.net/2010/07/18/gnuplottikz-for-stunning-latex-plots/}
+
+Building from CVS and more:\\
+\url{http://www.gnuplot.info/development/}
+
+\subsection{Installing gnuplot on Windows\\}
+
+Download gnuplot for Windows:\\
+\url{http://www.gnuplot.info/download.html}
+
+Choose the MinGW Windows binaries built by Tatsuro Matsuoka. Install it.
+
+On Windows 7:
+
+Control Panel/System and Security/System\\
+System Properties/Environment Variables/Edit System Variable\\
+Add to variable "Path" the path to gnuplot, by default:\\
+\begin{verbatim}C:\Program Files\gnuplot\bin\end{verbatim}
+
+Building from CVS and more:\\
+\url{http://www.gnuplot.info/development/}
+
+
+\subsection{Installing gnuplot on MacOSX\\}
+
+Download the gnuplot source:\\
+\url{http://sourceforge.net/projects/gnuplot/files/gnuplot/}
+
+Unzip to a folder created for gnuplot.
+
+Edit Makefile (sub folder shlib in the ReadLine source folder), search for -dynamic and change it to -dynamiclib
+
+Type in a console:
+\begin{verbatim}make install\end{verbatim}
+
+Change the directory to the gnuplot source folder, type:
+\begin{verbatim}./configure --with-readline=< path of the gnuplot folder>
+make install\end{verbatim}
+
+Source of this info:
+How to install gnuplot in Mac OS X lion
+\url{http://bhou.wordpress.com/2011/09/13/how-to-install-gnuplot-in-mac-os-x-lion/}
+
+Building from CVS and more:
+\url{http://www.gnuplot.info/development/}
+
+@
+\end{document}

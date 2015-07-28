@@ -1,31 +1,27 @@
 Package: Rgnuplot
 Type: Package
-Title: R interface for gnuplot
-Version: 1.0.1
+Title: R Interface for Gnuplot
+Version: 1.0.3
 Encoding: UTF-8
-Authors@R: c(person(given = "Göran", family = "Högnäs", role = "ths"),
+Authors@R: c(person(given = "Jose", family = "Gama", role = c("aut","cre"),email = "rxprtgama@gmail.com"),
     person(given = "Nicolas", family = "Devillard", role = "aut"),
     person(given = "Mauricio", family = "Galo", role = "ctb"),
     person(given = "Patrick", family = "J. Bartlein", role = "ctb"),
-    person(given = "Oscar", family = "Perpiñán Lamigueiro", role = "ctb"),
-    person(given = "José", family = "Gama", role = c("aut","cre"),email = "jgama@abo.fi"))  
+    person(given = "Oscar", family = "Perpiñán Lamigueiro", role = "ctb")
+    )  
 SystemRequirements: gnuplot
-Description: Rgnuplot, R interface for gnuplot
+Description: Interface for gnuplot
         Based on gnuplot_i version 1.11, the GPL code from Nicolas Devillard.
 License: GPL (>= 3)
-Depends: R (>= 2.7.0)
+Depends: R (>= 2.7.0), methods
 Enhances: colorspace, png, rgdal, sp
-Author: Göran Högnäs [ths],
+Packaged: 2015-07-28 21:09:05.378 UTC; poky
+Author: Jose Gama [aut, cre],
   Nicolas Devillard [aut],
   Mauricio Galo [ctb],
   Patrick J. Bartlein [ctb],
-  Oscar Perpiñán Lamigueiro [ctb],
-  José Gama [aut, cre]
-Maintainer: José Gama <jgama@abo.fi>
-Repository: CRAN
-Repository/R-Forge/Project: rgnuplot
-Repository/R-Forge/Revision: 27
-Repository/R-Forge/DateTimeStamp: 2014-02-22 06:08:05
-Date/Publication: 2014-02-22 11:35:38
-Packaged: 2014-02-22 07:15:58 UTC; rforge
+  Oscar Perpiñán Lamigueiro [ctb]
+Maintainer: Jose Gama <rxprtgama@gmail.com>
 NeedsCompilation: yes
+Repository: CRAN
+Date/Publication: 2015-07-29 00:20:58

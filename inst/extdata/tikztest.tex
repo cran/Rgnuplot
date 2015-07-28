@@ -1,0 +1,14 @@
+\documentclass{article}
+
+\usepackage[latin1]{inputenc}
+\usepackage{gnuplottex}
+ \usepackage{tikz}
+ \usepackage{gnuplot-lua-tikz}
+ \usepackage{mathpazo}
+\begin{document}
+ \begin{gnuplot}[terminal=tikz]
+plot sin(x)
+ \end{gnuplot}
+ \end{document}
+% pdflatex -enable-write18 -shell-escape tikztest
+

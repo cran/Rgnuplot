@@ -1,45 +1,32 @@
-library(Rgnuplot)
 
-#Initialize the gnuplot handle
-h1<-gp.init()
+# Initialize the gnuplot handle
+h1 <- Gpinit()
 
-#set gnuplot's additional search directories, to the extdata directory from Rgnuplot (default)
-gp.setloadpath(h1)
+# set gnuplot's additional search directories, to the extdata directory from Rgnuplot (default)
+Gpsetloadpath(h1)
 
-#change gnuplot's working directory to be the same as R's working directory (default)
-gp.setwd(h1)
-#filename for a temporary path+file
+# change gnuplot's working directory to be the same as R's working directory (default)
+Gpsetwd(h1)
+# filename for a temporary path+file
 tmpfile <- tempfile()
 
-gp.getloadpath(h1)
-gp.getwd(h1)
+Gpgetloadpath(h1)
+Gpgetwd(h1)
 getwd()
-z<-matrix(sample(1:6,6^2, replace=TRUE),6,6,byrow=FALSE)
+z <- matrix(sample(1:6, 6^2, replace = TRUE), 6, 6, byrow = FALSE)
 z
-gp.matrixr2gnu(z,'6x6.dat')
+GpMatrixr2gnu(z, "6x6.dat")
 
-gp.cmd(h1,'reset
-min = 0
-col = 5
-gridflag = 0
-datfile = "6x6.dat"
-tmpfile = "' %s% tmpfile %s% '"
-load "fenceplot.gnu"')#
+Gpcmd(h1, "reset\nmin = 0\ncol = 5\ngridflag = 0\ndatfile = \"6x6.dat\"\ntmpfile = \"" %s% tmpfile %s% "\"\nload \"fenceplot.gnu\"")  #
 
-#pause R and gnuplot
-gp.pause()
+# pause R and gnuplot
+Gppause()
 
 tmpfile <- tempfile()
-gp.cmd(h1,'reset
-min = 0
-col = 5
-gridflag = 1
-datfile = "6x6.dat"
-tmpfile = "' %s% tmpfile %s% '"
-load "fenceplot.gnu"')
+Gpcmd(h1, "reset\nmin = 0\ncol = 5\ngridflag = 1\ndatfile = \"6x6.dat\"\ntmpfile = \"" %s% tmpfile %s% "\"\nload \"fenceplot.gnu\"")
 
-#pause R and gnuplot
-gp.pause()
+# pause R and gnuplot
+Gppause()
 
-#close gnuplot handle
-h1<-gp.close(h1)
+# close gnuplot handle
+h1 <- Gpclose(h1) 

@@ -19,11 +19,14 @@ histogram3D		3D histogram with shiny bars
 ImageProcessing		simple image processing functions
 Interpolation1		Example of interpolation
 Interpolation2		Example of interpolation
+loxodrome		Example of a loxodrome plot
 LaTeX			Examples of LaTeX output
 maps1			Cartographic examples
 maps2			Cartographic examples
 maps3			Cartographic examples
 Maungawhau		Displaying a DEM
+moebius1		world map on a moebius strip (vector)
+moebius2		world map on a moebius strip (vector+raster)
 multiplot		Plot implicit, explicit and parametric expressions
 NORDKLIM1		Displaying time series of climate data
 NORDKLIM2		Displaying a time series of climate data with checkboxes

@@ -3,7 +3,7 @@
 #Title A simple interface to the PROJ.4 cartographic projections library
 #Author Simon Urbanek <simon.urbanek@r-project.org>
 
-AC_INIT(Rgnuplot, 1.0, jgama@abo.fi)
+AC_INIT(Rgnuplot, 1.0, rxprtgama@gmail.com)
 AC_CONFIG_SRCDIR(src/Rgnuplot.c)
 
 # find R home and set correct compiler + flags
@@ -43,13 +43,13 @@ AC_MSG_NOTICE([Checking for gnuplot])
 
 AC_CHECK_PROG(GNUPLOT,gnuplot,true,false)
 if test $GNUPLOT = "false"; then
-  AC_MSG_ERROR([*** gnuplot not found, it should be installed in order for Rgnuplot to work])
+  AC_MSG_ERROR([*** gnuplot not found, please read the vignette to learn how to install it])
 fi
 
 AC_ARG_VAR([PKG_CPPFLAGS],[custom C preprocessor flags for packages compilation])
 AC_ARG_VAR([PKG_LIBS],[custom libraries for package compilation])
 
-AC_CONFIG_FILES(src/Makevars)
+# AC_CONFIG_FILES(src/Makevars)
 AC_OUTPUT
 
 
